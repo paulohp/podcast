@@ -1,0 +1,43 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #EA5160;
+  width: 280px;
+  z-index: 10;
+  overflow-y: scroll;
+  @include transform( translateX(-300px) );
+  @include transition(transform .3s ease-out);
+}
+
+// article list navigation
+.articlesList {}
+
+.articleList_item {
+  border-bottom: 1px solid #EE6976;
+  padding: 10px;
+}
+
+.articleList_item_link {
+  color: #333;
+  display: block;
+  @include transition(all .3s ease-out);
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.articleList_item_title {
+  font-size: 1.9rem;
+}
+
+.articleList_item_date {
+  display: block;
+  font-size: 1.2rem;
+}

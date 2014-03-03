@@ -1,0 +1,34 @@
+//first breakpoint
+$tablet_breakpoint: "max-width: 790px";
+$mobile_breakpoint: "max-width: 390px";
+
+.show-for-small {
+  display: none;
+}
+
+//First content breakpoint
+@media all and ($tablet_breakpoint) {
+    #container > .mainView-auto {
+        max-width: 100%;
+        padding: 35px 10px;
+    }
+
+    // footer
+    #footer {
+        padding: 20px 10px;
+    }
+
+    .header {
+        min-width: 220px;
+    }
+
+    .navMain_menu_items {
+        float: none;
+        margin: 0;
+    }
+}
+
+// Last content breakpoint
+@media all and ($mobile_breakpoint) {
+    
+}

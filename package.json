@@ -1,16 +1,40 @@
 {
-  "name": "podcastminasdev",
-  "version": "0.1.0",
-  "description": "New DocPad project without using a skeleton",
-  "engines": {
-    "node": "0.10",
-    "npm": "1.3"
-  },
-  "dependencies": {
-    "docpad": "~6.54.10"
-  },
-  "main": "node_modules/docpad/bin/docpad-server",
+  "name": "Kaeljs-blog",
+  "version": "0.0.3",
+  "description": "KaelJS is a simplest static site generator built with NodeJS/ExpressJS Handlebars and NeDB.",
+  "main": "app.js",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.10.22"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "blog"
+  ],
+  "author": "Michael Lancaster",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "~0.3.0",
+    "cli-color": "~0.2.3",
+    "watch": "~0.9.0",
+    "moment": "~2.5.1",
+    "nedb": "~0.10.3",
+    "express": "~3.4.8",
+    "express3-handlebars": "~0.5.0",
+    "consolidate": "~0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.x",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-htmlmin": "~0.1.3"
   }
 }
