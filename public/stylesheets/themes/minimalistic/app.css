@@ -362,11 +362,10 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
 
 /* line 40, ../../scss/themes/minimalistic/components/_footer.scss */
 .navLogo_thumb {
-  background: url(/images/thumb-pic.jpg) no-repeat center center;
+  background: url(/images/sprites.png) no-repeat;
   width: 55px;
   height: 55px;
   display: block;
-  border-radius: 30px;
   float: left;
   margin-right: 15px;
 }

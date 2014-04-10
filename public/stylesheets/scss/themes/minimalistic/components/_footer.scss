@@ -1,5 +1,4 @@
 #footer {
-  height: 100px;
   padding: 20px 0 0 0;
   position: fixed;
   bottom: 0;
@@ -38,11 +37,10 @@
 }
 
 .navLogo_thumb {
-  background: url(/images/thumb-pic.jpg) no-repeat center center;
-  width: 55px;
-  height: 55px;
+  background: url(/images/sprites.png);
+  width: 150px;
+  height: 150px;
   display: block;
-  border-radius: 30px;
   float: left;
   margin-right: 15px;
 }
@@ -80,11 +78,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
