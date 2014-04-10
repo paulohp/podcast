@@ -17,10 +17,9 @@
 .navMain {
   overflow: hidden;
 }
-
 .header {
   float: left;
-  min-width: 250px;
+  min-width: 330px;
   @include transition(all .3s ease-out);
 
   &:hover {

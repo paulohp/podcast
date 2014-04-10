@@ -11,7 +11,7 @@ exports.listArticles = function(db) {
             }
 
             res.render('index', {
-                    title: 'Kaeljs static blog/site generator',
+                    title: 'Podcast do MinasDEV',
                     page: 'index',
                     articles: docs
                 }

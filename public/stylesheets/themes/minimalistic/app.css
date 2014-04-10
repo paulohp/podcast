@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Domine);
 /* ==========================================================================
 #   SCSS/COMPASS Modular Project Based.
 #   @settings
@@ -15,6 +14,7 @@
 /* ==========================================================================
 @base
 ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Domine);
 /* line 5, ../../scss/themes/minimalistic/_base.scss */
 ::selection {
   background-color: #fff2a8;
@@ -35,8 +35,8 @@
 
 /* line 9, ../../scss/themes/minimalistic/_base.scss */
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -66,7 +66,7 @@ a:active, a:focus {
   outline: none;
 }
 
-/* line 36, ../../scss/themes/minimalistic/_base.scss */
+/* line 38, ../../scss/themes/minimalistic/_base.scss */
 ul,
 ol,
 li {
@@ -75,7 +75,7 @@ li {
   padding: 0;
 }
 
-/* line 44, ../../scss/themes/minimalistic/_base.scss */
+/* line 49, ../../scss/themes/minimalistic/_base.scss */
 h1,
 h2,
 h3,
@@ -91,11 +91,11 @@ h6 {
   max-width: 700px;
 }
 
-/* line 60, ../../scss/themes/minimalistic/_base.scss */
+/* line 63, ../../scss/themes/minimalistic/_base.scss */
 body[data-page="internal"] .articleContent h1, body[data-page="internal"] .articleContent h2, body[data-page="internal"] .pageInternal h1, body[data-page="internal"] .pageInternal h2 {
   font-size: 3.0rem;
 }
-/* line 67, ../../scss/themes/minimalistic/_base.scss */
+/* line 68, ../../scss/themes/minimalistic/_base.scss */
 body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageInternal p {
   font-size: 2.0rem;
   line-height: 33px;
@@ -133,14 +133,14 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
   width: 280px;
   z-index: 10;
   overflow-y: scroll;
+  -webkit-transform: translateX(-300px);
   -moz-transform: translateX(-300px);
   -ms-transform: translateX(-300px);
   -o-transform: translateX(-300px);
-  -webkit-transform: translateX(-300px);
   transform: translateX(-300px);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 
@@ -154,9 +154,9 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
 .articleList_item_link {
   color: #333;
   display: block;
+  -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 /* line 27, ../../scss/themes/minimalistic/components/_aside.scss */
@@ -184,9 +184,9 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
 */
 /* line 1, ../../scss/themes/minimalistic/components/_container.scss */
 #container {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 
@@ -210,6 +210,7 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
     opacity: 1;
   }
 }
+
 @-moz-keyframes fadeIn {
   /* line 24, ../../scss/themes/minimalistic/components/_container.scss */
   from {
@@ -221,6 +222,7 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
     opacity: 1;
   }
 }
+
 @-ms-keyframes fadeIn {
   /* line 33, ../../scss/themes/minimalistic/components/_container.scss */
   from {
@@ -232,6 +234,7 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
     opacity: 1;
   }
 }
+
 @-o-keyframes fadeIn {
   /* line 42, ../../scss/themes/minimalistic/components/_container.scss */
   from {
@@ -243,6 +246,7 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
     opacity: 1;
   }
 }
+
 /*
 * @Nav Articles
 */
@@ -253,9 +257,9 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
   top: 10px;
   left: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 /* line 9, ../../scss/themes/minimalistic/components/_navAside.scss */
@@ -285,9 +289,9 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
   font-size: 2.2rem;
   color: #333332;
   display: block;
+  -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 /* line 14, ../../scss/themes/minimalistic/components/_content.scss */
@@ -316,7 +320,6 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
 */
 /* line 1, ../../scss/themes/minimalistic/components/_footer.scss */
 #footer {
-  height: 100px;
   padding: 20px 0 0 0;
   position: fixed;
   bottom: 0;
@@ -328,49 +331,49 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
   background-image: -moz-linear-gradient(bottom, #eeeeee, white 99%);
   background-image: -o-linear-gradient(bottom, #eeeeee, white 99%);
   background-image: linear-gradient(to top, #eeeeee, #ffffff 99%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 
-/* line 18, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 17, ../../scss/themes/minimalistic/components/_footer.scss */
 .navMain {
   overflow: hidden;
 }
 
-/* line 22, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 20, ../../scss/themes/minimalistic/components/_footer.scss */
 .header {
   float: left;
-  min-width: 250px;
+  min-width: 330px;
+  -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 27, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 25, ../../scss/themes/minimalistic/components/_footer.scss */
 .header:hover {
   opacity: 0.6;
 }
 
-/* line 34, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 32, ../../scss/themes/minimalistic/components/_footer.scss */
 .navLogo_title {
   color: #333;
   display: block;
   overflow: hidden;
 }
 
-/* line 40, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 38, ../../scss/themes/minimalistic/components/_footer.scss */
 .navLogo_thumb {
-  background: url(/images/sprites.png) no-repeat;
-  width: 55px;
-  height: 55px;
+  background: url(/images/sprites.png);
+  width: 150px;
+  height: 150px;
   display: block;
   float: left;
   margin-right: 15px;
 }
 
-/* line 50, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 47, ../../scss/themes/minimalistic/components/_footer.scss */
 .navLogo_name {
   font-size: 1.7rem;
   color: #333;
@@ -378,34 +381,34 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
   margin-top: 10px;
 }
 
-/* line 57, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 54, ../../scss/themes/minimalistic/components/_footer.scss */
 .navLogo_role {
   font-size: 1.2rem;
   display: block;
 }
 
-/* line 63, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 60, ../../scss/themes/minimalistic/components/_footer.scss */
 .navMain_menu {
   float: right;
   margin: 14px 0 5px 0;
 }
 
-/* line 68, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 65, ../../scss/themes/minimalistic/components/_footer.scss */
 .navMain_menu_items {
   float: left;
   margin: 0 0 0 20px;
 }
-/* line 72, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 69, ../../scss/themes/minimalistic/components/_footer.scss */
 .navMain_menu_items a {
   color: #333;
   font-size: 1.8rem;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 78, ../../scss/themes/minimalistic/components/_footer.scss */
+/* line 75, ../../scss/themes/minimalistic/components/_footer.scss */
 .navMain_menu_items a:hover {
   color: #aaa;
 }
@@ -415,20 +418,21 @@ body[data-page="internal"] .articleContent p, body[data-page="internal"] .pageIn
 */
 /* line 5, ../../scss/themes/minimalistic/components/_states.scss */
 #app[data-aside-visible="true"] .aside {
+  -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
-  -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 10, ../../scss/themes/minimalistic/components/_states.scss */
+/* line 11, ../../scss/themes/minimalistic/components/_states.scss */
 #app[data-aside-visible="true"] #container, #app[data-aside-visible="true"] #footer {
+  -webkit-transform: translateX(280px);
   -moz-transform: translateX(280px);
   -ms-transform: translateX(280px);
   -o-transform: translateX(280px);
-  -webkit-transform: translateX(280px);
   transform: translateX(280px);
   -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
   filter: blur(2px);
 }
 
